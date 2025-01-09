@@ -1,6 +1,6 @@
 # Pharmacokinetic and Pharmacodynamic (PK/PD) Modeling of Drug Effects Using Emax Model
 
-To analyze and model a drug's pharmacokinetics (PK) and pharmacodynamics (PD) using a dataset of simulated drug effects over time, employing an Emax model to understand drug efficacy and optimize dosing schedules.
+To analyze and model a drug's pharmacokinetics (PK) and pharmacodynamics (PD) using a dataset of simulated drug effects over time, employing an Emax model to understand drug efficacy.
 
 ---
 
@@ -50,7 +50,7 @@ This dataset contains 100 missing values, which have been excluded from the anal
 
 ## Time vs. Drug effect
 
-The PK concentration vs. time graph shows distinct gender differences. In females, the drug peaks at 60 ng/mL at time 0, declines to 28 ng/ml at 4 hours and 10 ng/mL at 12 hours, and is nearly eliminated after 36 hours. In males, the concentration peaks at 15 ng/mL at 4 hours and decreases slowly around 24 hours.
+The PK concentration vs. time graph shows distinct gender differences. In females, the drug peaks at 60 ng/mL at time 2.5 hours, declines to 28 ng/ml at 4 hours and 10 ng/mL at 12 hours, and is nearly eliminated after 36 hours. In males, the concentration peaks at 15 ng/mL at 4 hours and decreases slowly around 24 hours.
 
 <img width="814" alt="image" src="https://github.com/user-attachments/assets/21f4f1bc-f62c-4e95-a8eb-fe83953a07d6" />
 
@@ -71,7 +71,6 @@ The PK/PD simulation using an Emax model demonstrated a rapid onset of drug effe
 
 <img width="819" alt="image" src="https://github.com/user-attachments/assets/3a4d6f5e-8187-4ace-9094-b2c2ce712a0f" />
 
-
 ## Validation
 
 Compare observed vs. predicted effects to assess the model's accuracy.
@@ -82,6 +81,7 @@ Residual Analysis
 
 <img width="632" alt="image" src="https://github.com/user-attachments/assets/29af3dcd-19fe-4cea-9d52-ecf5494dafe3" />
 
+---
 
 ## Model Performance
 
@@ -89,3 +89,12 @@ Residual Analysis
 |-------------------------|-------------------------------|
 | Mean Squared Error (MSE) | 3.1632489831555417e-16        |
 | R-Squared               | 1.0                           |
+
+---
+
+## Conclusion
+
+The analysis reveals distinct gender differences in the drug's pharmacokinetic profile, with females experiencing a faster elimination rate. The PK/PD modeling suggests a rapid onset of drug effect, peaking at 2.5 hours and gradually diminishing over time. Model validation shows high accuracy, with an MSE of 3.16e-16 and an R-squared value of 1.0.
+
+--- 
+
